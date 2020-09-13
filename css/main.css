@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Roboto;
+    color: black;
+    background-color: #F7F7F7;
+}
+
+.body-container {
+    display: grid;
+    grid-template-columns: 1fr 1000px 1fr;
+    grid-template-rows: auto auto auto;
+}
+
+ /* Common Section title */
+.section-title{
+    grid-column: 1/-1;    
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    color:rgb(0, 0, 0);
+    padding-bottom: 40px;
+}
+/* Top Header starts*/
+
+.hearderWrapper {
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.hearderWrapper a{
+    color: black;
+}
+.hearderWrapper .logo-name {
+    font-size: 40px;
+}
+
+.hearderWrapper .header-navbar {
+    display: flex;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    -moz-box-align: center;
+    align-items: center;
+    width: 28rem;
+    font-size: 25px;
+}
+
+
+/* Top Header ends*/
+
+/* Main page */
+.main-page{
+    margin-top:50px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+/* Personal bio on homepage*/
+.bio{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto auto auto;
+}
+
+.bio .intro{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+}
+
+.bio .intro h1{
+    font-size: 2.625rem;
+    line-height: 4rem;
+    font-weight: 700;
+}
+
+.bio .intro h2{
+    font-weight: 700;
+}
+
+.social-media{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    -moz-box-pack: start;
+    justify-content: start;
+    justify-items: start;
+    margin-left: -2.5rem;
+    margin-right: -2.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;    
+    margin-top: 40px;
+}
+
+.social-media a{    
+    margin-right: 1rem;
+    margin-bottom: 0.75rem;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+}
+
+.media-buttons{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    -moz-box-pack: start;
+    justify-content: start;
+    justify-items: start;
+    margin-left: -2.5rem;    
+    padding-left: 2.5rem;        
+}    
+.social-media .outline{
+    position: relative;
+    z-index: 3;
+    background: transparent;
+    color: #1172c4;
+    font-size: 14px;
+    border-color: #1172c4;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 22px;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    transition: all 0.2s linear;
+}
+
+.social-media a:hover {
+    color: white;
+    background: #1172c4;
+    border-color: white;
+    transition: all 0.2s linear;
+}
+
+.social-media a:active {
+    border-radius: 22px;
+}
+
+.bio .about-section{
+    grid-column: 1/-1;
+    margin-top: 30px;
+    padding-top: 30px;
+    display: grid;    
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.bio .about-section .description{
+    grid-column: 1/2;
+
+    display: flex;
+    flex-direction: column;
+    -moz-box-pack: center;
+    justify-content: center;
+}
+.bio .about-section .description > .section-title{
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    color:rgb(0, 0, 0);
+    padding-bottom: 20px;
+}
+.bio .about-section .description .text-content{
+    width: 100%;
+    max-width: 31.25rem
+}
+
+.bio .about-section .image-section{
+    grid-column: 2/3;
+
+    width: 100%;
+    max-width: 18rem;
+    margin-top: 4rem;
+
+    position: relative;
+    left: 200px;
+}
+.bio .about-section .image-section > img{
+    border-radius: 5%;
+}
+
+
+.bio > .contact{
+    grid-column: 1/-1;
+    margin-top: 40px;
+
+    padding-top: 30px;
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.bio > .contact > .title{
+    grid-column: 1/-1;    
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    color:rgb(0, 0, 0);    
+}
+
+.bio > .contact > .contact-wrapper{
+    grid-column: 1/-1;
+    padding-top: 40px;  
+    display: grid;
+    grid-template-columns: 180px auto;  
+}
+.bio > .contact > .contact-wrapper > .contact-image{
+    grid-column: 1/2;
+}
+.bio > .contact > .contact-wrapper > .contact-image > img{
+    max-width:100%;
+    border-radius: 90px;
+}
+.bio > .contact > .contact-wrapper > .contact-info{
+    grid-column: 2/3;
+    padding: 60px;
+}
+
+/* Main page | Work Experience */
+.experience{
+    margin-top: 30px;
+    padding-top: 30px;
+    grid-column: 1/-1;
+}
+.company > .details > .title{
+    font-size: 20px;    
+}
+.company > .details > .location{
+font-size: 15px;
+}
+.company > .details > .degree-program{
+    padding-top: 10px;
+    font-weight: 700;
+}
+
+.company > .details > .description{
+    margin-top: 10px;
+}
+
+/* Projects Page*/
+.main-page > .projects{
+    display: grid;    
+    grid-template-rows: repeat(auto);
+}
+.main-page > .projects > .section-title{
+    grid-column: 1/-1;    
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    color:rgb(0, 0, 0);  
+    margin-bottom: 40px;
+}
+.main-page > .projects > .project{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 100px;
+}
+.projects > hr{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.project > .details {
+    width: 100%;
+    max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+}
+.project > .details > .title{
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+    font-size: 1.375rem;
+    line-height: 1.625rem;
+    font-weight: 700;
+}
+.project > .details > .description{
+    margin-top: 20px;
+}
+
+.project > .details > .techstack{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+    line-height: 1.2rem;
+}
+.project > .details > .techstack > span{
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+
+    box-shadow:rgb(255, 159, 28) 0px -0.5rem 0px inset;
+    transition: box-shadow 0.3s ease-out 0s;
+}
+
+.project > .details > .links{
+    display: flex;
+    -moz-box-pack: start;
+    justify-content: flex-start;
+    -moz-box-align: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+.project > .details > .links > a{
+    display: inline-block;
+    margin-right: 2rem;
+
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    color: inherit;
+    cursor: pointer;
+}
+.project > .image{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 25rem;
+    height: 15rem;
+    border-radius: 1rem;
+    box-shadow:
+rgba(0, 0, 0, 0.16) 0px 0px 2.5rem;    
+}
+
+/* Academia Page */
+.school{
+    margin-top: 35px;
+}
+.school > .details > .name{
+    font-size: 20px;
+}
+.school > .details > .location{
+font-size: 15px;
+}
+.school > .details > .degree-program{
+    padding-top: 10px;
+    font-weight: 700;
+}
+.school > .details > .degree-program > span{
+    font-weight: initial;
+}
+.school > .details > .thesis,.misc{
+    line-height: 20px;
+}
+
+/* Footer*/
+footer{    
+    margin-top: 300px;
+    grid-column: 1/-1;    
+    grid-row: 50px;        
+    background-color: rgb(75, 165, 214);    
+}
+footer > p{
+    text-align: center;
+    place-content: center;
+}
