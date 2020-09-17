@@ -4,11 +4,14 @@
 <head>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178143001-1"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-    gtag('config', 'UA-178143001-1');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-178143001-1');
     </script>
 
     <meta charset="UTF-8">
@@ -18,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
 
     <link rel="stylesheet" href="css/main.css">
-    <title>MD Sami Uddin</title>
+    <title>MD Sami Uddin - Portfolio</title>
 </head>
 
 <!-- TODO: Convert into sass -->
@@ -28,9 +31,9 @@
     <!-- Top Header with navigation -->
     <header class="hearderWrapper">
         <a class="logo-name" href="index.html" aria-current="home">Sami</a>
-        <nav class="header-navbar">            
+        <nav class="header-navbar">
             <a href="/Resume/Sami-Uddin_Resume.pdf">Resume</a>
-            <a href="projects.html">Projects</a>            
+            <a href="projects.html">Projects</a>
             <a href="academia.html">Academia</a>
         </nav>
     </header>
@@ -39,40 +42,68 @@
     <!-- All page will contain main-page div -->
     <div class="main-page">
         <section class="education">
-            <div class="section-title">Education</div>          
+            <div class="section-title">Education</div>
             <div class="school">
                 <div class="details">
                     <div class="name"> Old Dominion University</div>
                     <div class="location"> Norfolk, Virginia</div>
                     <div class="graduation-date"><i class='far fa-calendar-check'></i> January 2020 - Present</div>
-                    <div class="degree-program">Master of Science in Computer Science | <span> GPA 3.75  </span> </span></div>
-                    <div class="thesis"></div>                    
-                    <div class="misc">Currently working on reaserch project on Web Accessibility. Member of <a href="https://ws-dl.cs.odu.edu/">WS-DL</a> research group</div>                    
-                </div>                                
-            </div>      
-            
+                    <div class="degree-program">Master of Science in Computer Science | <span> GPA 3.75 </span> </span>
+                    </div>
+                    <div class="thesis"></div>
+                    <div class="misc">Currently working on reaserch project on Web Accessibility. Member of <a
+                            href="https://ws-dl.cs.odu.edu/">WS-DL</a> research group</div>
+                </div>
+            </div>
+
             <div class="school">
                 <div class="details">
                     <div class="name"> Military Institute of Science and Technology</div>
                     <div class="location"> Dhaka, Bangladesh</div>
-                    <div class="graduation-date"><i class='far fa-calendar-check'></i> January 2013 - February 2017</div>
+                    <div class="graduation-date"><i class='far fa-calendar-check'></i> January 2013 - February 2017
+                    </div>
                     <div class="degree-program">Bachelor of Science in Computer Science and Engineering</div>
-                    <div class="thesis"></div>                    
-                    <div class="misc"></div>                    
-                </div>                                
-            </div>      
+                    <div class="thesis"></div>
+                    <div class="misc"></div>
+                </div>
+            </div>
         </section>
 
         <!-- TODO: Develop publications section -->
-        <!-- <section class="publications">
-            <div class="section-title">Publications</div>                    
-        </section> -->
+        <section class="publications">
+            <div class="section-title">Publications</div>
+            <ul>
+                <li>T. Zaki, M. N. Islam, M. S. Uddin, S.N. Tumpa, M. M. Hasan, M. R. Anti and J. Hossain. <b>Towards
+                    Developing a Learning Tool for Children with Autism</b>. Presented and published in the
+                    proceedings of 6th International Conference on Informatics, Electronics & Vision, ICIEV 2017,
+                    1-3 September, Hyogo, Japan</li>
+                <li>T. Zaki, M. S. Uddin, M. M. Hasan and M. N. Islam.<b> Security Threats for Big Data: A Study on
+                    Enron Email Dataset</b>. Presented and published in the proceedings of 5th International
+                    Conference on Research and Innovation in Information systems, ICRIIS 2017, 16-17 July,
+                    Langkawi, Malaysia</li>
+                <li>
+                    M. N. Islam, T. Zaki, M. S. Uddin and M. M., Hasan. <b>Security Threats for Big Data: An Empirical
+                    Study</b>. Published by IGI Global publishers in the International Journal of Information
+                    Communication Technologies and Human Development (IJICTHD), Vol. 10 (4), Oct.-Dec.’18,
+                    Hershey, Pennsylvania, USA.
+                </li>
+            </ul>
+
+            <!-- Social media icons [Google Scholar] -->
+            <div style="opacity: 1; transform: none;" class="social-media">
+                <div class="media-buttons">
+                    <a href="https://scholar.google.com/citations?user=9GJoF4AAAAAJ&hl=en" class="outline" target="_blank"
+                        rel="nofollow noopener noreferrer" aria-label="Github" width="auto" font-size=".95rem"
+                        class="social__StyledSocialProfile-sc-1kpxmto-1 fKnPaf"> Google Scholar</a>
+                </div>
+            </div>
+        </section>
     </div>
 
     <footer>
         <p id="footer-content"></p>
     </footer>
-    
+
     <script src="js/site.js"></script>
 </body>
 

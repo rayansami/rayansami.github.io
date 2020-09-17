@@ -22,7 +22,7 @@ body {
     font-size: 1.75rem;
     line-height: 2.25rem;
     color:rgb(0, 0, 0);
-    padding-bottom: 40px;
+    padding-bottom: 50px;
 }
 /* Top Header starts*/
 
@@ -246,14 +246,7 @@ font-size: 15px;
     display: grid;    
     grid-template-rows: repeat(auto);
 }
-.main-page > .projects > .section-title{
-    grid-column: 1/-1;    
-    font-weight: 700;
-    font-size: 1.75rem;
-    line-height: 2.25rem;
-    color:rgb(0, 0, 0);  
-    margin-bottom: 40px;
-}
+
 .main-page > .projects > .project{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -326,7 +319,7 @@ rgba(0, 0, 0, 0.16) 0px 0px 2.5rem;
 
 /* Academia Page */
 .school{
-    margin-top: 35px;
+    margin-bottom: 35px;
 }
 .school > .details > .name{
     font-size: 20px;
@@ -343,6 +336,17 @@ font-size: 15px;
 }
 .school > .details > .thesis,.misc{
     line-height: 20px;
+}
+
+.publications{
+    margin-top: 30px;
+    padding-top: 30px;
+}
+.publications > ul{
+    list-style-type: none;    
+}
+ul > li{
+    margin-bottom: 12px
 }
 
 /* Footer*/
