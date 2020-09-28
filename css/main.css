@@ -185,6 +185,25 @@ body {
 }
 
 
+/* Main page volunteer work - same as company*/
+.voluntary-works{
+    margin-top: 30px;
+    padding-top: 30px;
+    grid-column: 1/-1;
+}
+
+.volunteer >  .title{
+    font-size: 20px;      
+}
+.volunteer >  .location{
+    font-size: 15px;
+}
+.volunteer > .description{
+    margin-top: 10px;
+}
+
+
+/* Main page contact */
 .bio > .contact{
     grid-column: 1/-1;
     margin-top: 40px;
