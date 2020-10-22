@@ -357,12 +357,22 @@ font-size: 15px;
     line-height: 20px;
 }
 
+.courses{
+    margin-top: 30px;
+    padding-top: 30px;
+}
+
+.courses-name > ul{    
+    margin-left: 15px;
+}
+
 .publications{
     margin-top: 30px;
     padding-top: 30px;
 }
 .publications > ul{
-    list-style-type: none;    
+    /* list-style-type: none;    */
+    margin-left: 15px; 
 }
 ul > li{
     margin-bottom: 12px
