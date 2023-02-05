@@ -15,6 +15,10 @@ body {
     grid-template-rows: auto auto auto;
 }
 
+p,li, div.description{ /* Justify the texts */
+    text-align: justify;
+}
+
  /* Common Section title */
 .section-title{
     grid-column: 1/-1;    
